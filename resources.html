@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Brotherhood of Failures</title>
+</head>
+<body class = "fade-in">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"> 
+                <img src="Screenshot_2024-09-25_234452-removebg-preview.png" alt="Brotherhood of Failures Logo">
+            </a>
+        </div>
+        
+        <div class="button1">
+            <a href="index.html">Brotherhood of Failures</a>
+        </div>
+
+        <div class="button2">
+            <a href="story.html">Submit a Story</a>
+        </div>
+        
+        <div class="button3">
+            <a href="archive.html">Story Archive</a>
+        </div>
+
+        <div class="button4">
+            <a href="resources.html">Resources</a>
+        </div>
+
+        <div class="button5">
+            <a href="us.html">About Us</a>
+        </div>
+     
+    </div>
+
+    <div class="container">
+        <h1>Resources</h1>
+        <p>Here are some helpful resources related to mental health and support.</p>
+    
+        <div class="resource-list">
+            <div class="resource-item">
+                <h2>National Suicide Prevention Lifeline</h2>
+                <p>Available 24/7 to offer support for those in distress or crisis.</p>
+                <a href="https://988lifeline.org/?utm_source=google&utm_medium=web&utm_campaign=onebox" class="resource-link" target="_blank" rel="noopener noreferrer">Visit Website</a>
+            </div>
+    
+            <div class="resource-item">
+                <h2>Therapy Resources</h2>
+                <p>Find licensed therapists who specialize in helping men overcome their struggles.</p>
+                <a href="https://secure.helloalma.com/providers-landing/?utm_campaign=9675220292&utm_source=google&utm_medium=paid&utm_content=634397407904&utm_term=p_psychology%20find%20a%20therapist&adgroupid=138508468996&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6oVAKufUuIHv3xfdSiNWWDRnxbUCOjwq-Rz7qVeksT40EOwwEKxZ74aAsaWEALw_wcB" class="resource-link" target="_blank" rel="noopener noreferrer">Find Therapists</a>
+            </div>
+    
+            <div class="resource-item">
+                <h2>Mens Mental Health</h2>
+                <p>Information on Mens Mental Health and how you can deal with the struggles going on in your life.</p>
+                <a href="https://www.nimh.nih.gov/health/topics/men-and-mental-health" class="resource-link" target="_blank" rel="noopener noreferrer">Mens Mental Health Resources</a>
+            </div>
+    
+            <div class="resource-item">
+                <h2>How to Fail with Elizabeth Day</h2>
+                <p>How To Fail with Elizabeth Day is a podcast that celebrates the things in life that haven’t gone right and what we might learn from them along the way.</p>
+                <a href="https://open.spotify.com/show/4m7U7kNne0iu35HK571Ui8" class="resource-link" target="_blank" rel="noopener noreferrer">How to Fail</a>
+            </div>
+    
+            <div class="resource-item">
+                <h2>Start Journaling</h2>
+                <p>Capture your thoughts and experiences in a secure, private space. Journaling can be a powerful tool to reflect on failures and personal growth.</p>
+                <a href="https://dayoneapp.com/" class="resource-link" target="_blank" rel="noopener noreferrer">Start Journaling</a>
+            </div>
+    
+            <div class="resource-item">
+                <h2>Men’s Support Groups</h2>
+                <p>Join peer-led groups where men can openly discuss their mental health struggles, share experiences, and receive emotional support.</p>
+                <a href="https://www.mensgroup.com/" class="resource-link" target="_blank" rel="noopener noreferrer">Join Men's Groups</a>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+
+    
+<script src="script.js"></script>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+<div class="cloud cloud4"></div>
+
+
+<audio id="backgroundMusic" src="river.mp3" loop muted></audio>
+
+<script>
+    const audio = document.getElementById('backgroundMusic');
+    
+    window.addEventListener('load', () => {
+        const savedTime = localStorage.getItem('audioCurrentTime');
+        if (savedTime) {
+            audio.currentTime = savedTime;
+        }
+        audio.muted = false; // Unmute the audio
+        audio.play();
+    });
+
+    window.addEventListener('beforeunload', () => {
+        localStorage.setItem('audioCurrentTime', audio.currentTime);
+    });
+</script>
+
+</body>
+</html>
+
